@@ -1,0 +1,85 @@
+/* Skewed header */
+.skewed {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+.skewed > .header-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    right: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    filter: brightness(50%);
+}
+.skewed > .skewed-h-wr {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.skewed > .skewed-h-wr > .skewed-h-content { 
+    width: 1000px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skewed > .skewed-h-wr > .skewed-h-content > .heading {
+    background-color: #cea135;
+    color: #11122b;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    width: 175px;
+    padding: 10px;
+    text-align: center;
+}
+/* Page Container  */
+.page-container {
+    display: flex;
+    justify-content: center;
+}
+.page-container > .content-wraper {
+    width: 1000px;
+}
+.page-container > .content-wraper > #chef{
+    width: 350px;
+    margin: 23px 40px 20px 0;
+    float: left;
+    border: 1px solid #cea135;
+}
+.page-container > .content-wraper p {
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+/* Squares Grid */
+.squares-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.squares-wrapper > .squares {
+    width: 1000px;
+}
+.squares-wrapper > .squares > .square {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -4px;
+}
+.square > .image-wrapper img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.square > .square-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 42px;
+}
+.square > .square-txt h1 {
+    color: #cea135;
+}

@@ -1,0 +1,20 @@
+/* helper */
+.spacer60 {
+    height: 60px;
+    width: 100%
+}
+.spacer10 {
+    width: 100%;
+    height: 10px;
+}
+.anchor {
+    text-decoration: none;
+}
+.anchor:focus {
+    outline: none;
+}
+.anchor h1::after {
+    font-family: "Font Awesome 5 Free";
+    content: " \f0c1";
+    font-weight: 900;
+}
